@@ -9,3 +9,17 @@
 		color: red;
 	}
 }
+
+img {
+	display:block;
+	width:100%;
+}
+
+#page-title {
+	color: blue !important;
+  }
+  
+  /* Write a ton of CSS! */
+  .blue-class {
+	color: green !important;
+  }
