@@ -19,7 +19,16 @@ img {
 	color: blue !important;
   }
   
-  /* Write a ton of CSS! */
-  .blue-class {
+/* Write a ton of CSS! */
+.blue-class {
 	color: green !important;
   }
+
+.city-view-image {
+	width: 500px;
+	height: 300px;
+}
+.row-one-image {
+	width: 500px;
+	height: 300px;
+}
