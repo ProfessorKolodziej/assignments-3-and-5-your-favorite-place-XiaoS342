@@ -1,31 +1,18 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
-	}
+
+@media screen and (min-width: 1024px) {
+    /* CSS rules here will apply to screens wider than 1024px */
 }
 
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
-	}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CSS rules here will apply to screens between 768px and 1023px wide */
 }
 
-img {
-	display:block;
-	width:100%;
+@media screen and (max-width: 767px) {
+    /* CSS rules here will apply to screens smaller than 768px */
 }
-
-#page-title {
-	color: blue !important;
-  }
-  
-/* Write a ton of CSS! */
-.blue-class {
-	color: green !important;
-  }
 
 .city-view-image {
-	width: 500px;
+	width: 100%;
 	height: 300px;
 }
 
@@ -34,22 +21,49 @@ img {
 	height: 300px;
 }
 
-/* Base Styles */
+.row-two-image {
+    width: 200px;
+	height: 400px;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Koh Santepheap", serif;
     margin: 0;
     padding: 0;
     background: #fff;
-    color: #333;
-}
-
-.city-view-image {
-    width: 100%;
-    height: auto;
+    color: #3D210D;
 }
 
 h1, h2, h3 {
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
     color: #003366;
+}
+
+h1{
+    font-size: 600%;
+}
+
+h2{
+    font-size:500%;
+}
+
+h3{
+    font-size: 300%;
+}
+
+.nanjing-article-1, .nanjing-article-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nanjing-article {
+    flex-direction: column;
+    flex-basis: 30%;
+    margin: 0 10px;
 }
 
 h1 {
@@ -59,14 +73,12 @@ h1 {
     text-align: center;
 }
 
-/* Top Attractions and Local Cuisine section */
 h2 {
     background-color: #ececec;
     padding: 10px;
     text-align: center;
 }
 
-/* Top Attractions Articles */
 .nanjing-article {
     margin-bottom: 20px;
 }
@@ -97,7 +109,6 @@ h2 {
     text-decoration: underline;
 }
 
-/* Tips for Exploring Section */
 .nanjing-2 h2 {
     background-color: #cceeff;
 }
@@ -114,13 +125,6 @@ h2 {
     margin-bottom: 5px;
 }
 
-/* Local Cuisine Section */
-.nanjing-article:last-child {
-    background-color: #f5f5f5;
-    padding: 15px;
-}
-
-/* Footer Styles */
 footer {
     background-color: #003366;
     color: #ffffff;
@@ -128,15 +132,13 @@ footer {
     padding: 10px;
     position: relative;
     clear: both;
-}
 
-/* Media Query for Responsive Design */
-@media only screen and (max-width: 600px) {
-    .row-one-image, .row-two-image {
-        width: 100%;
-    }
-
-    .nanjing-article p, .nanjing-2 li {
-        padding: 0 10px;
-    }
+    font-weight: 300;
+    color: #FFFFFF;
+    padding: 3% ;
+    border-radius: 30px;  
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 2%;
+    font-size: 63%
 }
