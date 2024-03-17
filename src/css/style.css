@@ -33,3 +33,110 @@ img {
 	width: 500px;
 	height: 300px;
 }
+
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+
+.city-view-image {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    color: #003366;
+}
+
+h1 {
+    background-color: #ececec;
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Top Attractions and Local Cuisine section */
+h2 {
+    background-color: #ececec;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Top Attractions Articles */
+.nanjing-article {
+    margin-bottom: 20px;
+}
+
+.nanjing-article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.nanjing-article h3 {
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+.nanjing-article p {
+    padding: 0 15px;
+    text-align: justify;
+}
+
+.nanjing-article a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.nanjing-article a:hover {
+    text-decoration: underline;
+}
+
+/* Tips for Exploring Section */
+.nanjing-2 h2 {
+    background-color: #cceeff;
+}
+
+.nanjing-2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nanjing-2 li {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* Local Cuisine Section */
+.nanjing-article:last-child {
+    background-color: #f5f5f5;
+    padding: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    clear: both;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 600px) {
+    .row-one-image, .row-two-image {
+        width: 100%;
+    }
+
+    .nanjing-article p, .nanjing-2 li {
+        padding: 0 10px;
+    }
+}
