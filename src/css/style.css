@@ -8,13 +8,34 @@
 }
 
 @media screen and (max-width: 767px) {
-    /* CSS rules here will apply to screens smaller than 768px */
 }
 
-.city-view-image {
-	width: 100%;
-	height: 300px;
-}
+
+.image-title-container {
+    position: relative; 
+    width: 100%; 
+    margin: auto;
+  }
+  
+.image-title-container img {
+    width: 100%;
+    display: block; 
+  }
+  
+  .title-overlay {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 1000%;
+    font-family: "Jomhuria", serif;
+    font-weight: normal; 
+    text-align: center; 
+    white-space: nowrap;
+  }
+
+.introduction
 
 .row-one-image {
 	width: 500px;
@@ -31,7 +52,7 @@ body {
     margin: 0;
     padding: 0;
     background: #fff;
-    color: #3D210D;
+    color: #110a05;
 }
 
 h1, h2, h3 {
@@ -109,36 +130,16 @@ h2 {
     text-decoration: underline;
 }
 
-.nanjing-2 h2 {
-    background-color: #cceeff;
-}
 
-.nanjing-2 ul {
+
+.nanjing-3 ul {
     list-style-type: none;
     padding: 0;
 }
 
-.nanjing-2 li {
+.nanjing-3 li {
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 5px;
-}
-
-footer {
-    background-color: #003366;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    clear: both;
-
-    font-weight: 300;
-    color: #FFFFFF;
-    padding: 3% ;
-    border-radius: 30px;  
-    display: inline-block;
-    text-decoration: none;
-    margin-top: 2%;
-    font-size: 63%
 }
