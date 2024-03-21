@@ -1,54 +1,38 @@
 
-/*  @media screen and (min-width: 1024px) {
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-}
-
-@media screen and (max-width: 767px) {
-}
-*/
-
-
-.image-title-container {
+  
+.cityviewimage-title {
     position: relative; 
     width: 100%; 
     margin: auto;
   }
   
-.image-title-container img {
+.cityviewimage-title img {
     width: 100%;
     display: block; 
   }
   
-  .title-overlay {
+.overlay {
     position: absolute; 
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%); 
     color: rgba(255, 255, 255, 0.787); 
-    font-size: 1000%;
     font-family: "Jomhuria", serif;
     font-weight: normal; 
     text-align: center; 
     white-space: nowrap;
   }
 
-.introduction{
-    text-align: center;
-    max-width: 1100px;
-    margin: 20px auto;
-}
+  .overlay {
+    font-size: 950%;
+  }
 
-.row-one-image {
-	width: 500px;
-	height: 300px;
-}
+  .introduction {
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.2em;
+  }
 
-.row-two-image {
-    width: 200px;
-	height: 400px;
-}
 
 body {
     font-family: "Koh Santepheap", serif;
@@ -57,61 +41,64 @@ body {
     background: #ffffff;
     color: #110a05;
 }
-
+  
 h1, h2, h3 {
     font-family: "Jomhuria", serif;
-    font-weight: 400;
+    font-weight: 350;
     font-style: normal;
     color: #04417d;
 }
 
-h1{
+/*  h1{
     font-size: 600%;
-}
+} ----now the h1- Nanjing is “overlay”
+*/
 
 h2{
     font-size:500%;
-}
-
-h3{
-    font-size: 300%;
-}
-
-.nanjing-article-1, .nanjing-article-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nanjing-article {
-    flex-direction: column;
-    flex-basis: 30%;
-    margin: 0 10px;
-}
-
-h1 {
-    background-color: #ececec;
-    padding: 20px 0;
-    margin: 0;
-    text-align: center;
-}
-
-h2 {
     background-color: #ececec;
     padding: 10px;
     text-align: center;
 }
 
-.nanjing-article {
-    margin-bottom: 20px;
+h3{
+    font-size: 300%;
+}
+ 
+
+  .nanjing-article {
+      margin: 1rem;
+      text-align: center;
+  }
+  
+  .nanjing-article img {
+      width: 100%;
+      height: auto;
+  }
+  
+  .row-two-image {
+    width: 200px;
+    height: 400px;
 }
 
-.nanjing-article img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  .nanjing-article-1, .nanjing-article-2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+  }
+  
+  .nanjing-article {
+      flex: 0 1 30%; 
+      margin: 10px;
+  }
+
+  .nanjing-article h3, .nanjing-article p, .nanjing-article a {
+    padding: 0.5rem;
+}
+
+  .nanjing-article a:hover {
+    text-decoration: underline;
 }
 
 .nanjing-article h3 {
@@ -129,12 +116,6 @@ h2 {
     text-decoration: none;
 }
 
-.nanjing-article a:hover {
-    text-decoration: underline;
-}
-
-
-
 .nanjing-3 ul {
     list-style-type: none;
     padding: 0;
@@ -146,3 +127,32 @@ h2 {
     padding: 10px;
     margin-bottom: 5px;
 }
+
+  
+  
+  
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+      .nanjing-article {
+          flex: 0 1 45%; 
+      }
+  }
+  
+@media screen and (max-width: 767px) {
+      .nanjing-article-1, .nanjing-article-2 {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .nanjing-article {
+          flex: 0 1 90%; 
+      }
+  
+      .introduction, .nanjing-article h3, .nanjing-article p, .nanjing-article a {
+          padding: 0.5rem;
+      }
+  
+  }
