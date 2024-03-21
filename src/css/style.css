@@ -34,7 +34,10 @@
       font-size: 1.2em;
   }
 
-
+  .list-of-attractions{
+    list-style-type: none; 
+   }
+   
 body {
     font-family: "Koh Santepheap", serif;
     margin: 0;
