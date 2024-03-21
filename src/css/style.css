@@ -24,7 +24,8 @@
   }
 
   .overlay {
-    font-size: 950%;
+    font-size: 650%;
+    
   }
 
   .introduction {
@@ -42,16 +43,20 @@ body {
     color: #110a05;
 }
   
-h1, h2, h3 {
+h2, h3 {
     font-family: "Jomhuria", serif;
     font-weight: 350;
     font-style: normal;
     color: #04417d;
 }
 
+h1{
+    font-weight: 200;
+    font-style: normal;
+}
+
 /*  h1{
-    font-size: 600%;
-} ----now the h1- Nanjing is “overlay”
+} ----now the h1- Nanjing is also “overlay”
 */
 
 h2{
